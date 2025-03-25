@@ -51,12 +51,4 @@ class Grid
         neighborhood[7] = GetCell(column + 1, row + 1);
         return neighborhood;
     }
-
-    public int MooreNeighborhoodCount(int column, int row)
-    {
-        bool[] neighborhood = MooreNeighborhood(column, row);
-        int count = 0;
-        foreach (bool cell in neighborhood) if (cell) count++;
-        return count;
-    }
 }

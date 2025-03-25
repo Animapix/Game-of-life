@@ -39,7 +39,6 @@ class Game
         {
             case GameState.Edit:
                 UpdateEditMode();
-                
                 break;
             case GameState.Play:
                 UpdateSimulation();

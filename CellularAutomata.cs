@@ -51,4 +51,12 @@ class CellularAutomata : Grid
             }
         }
     }
+
+    public int MooreNeighborhoodCount(int column, int row)
+    {
+        bool[] neighborhood = MooreNeighborhood(column, row);
+        int count = 0;
+        foreach (bool cell in neighborhood) if (cell) count++;
+        return count;
+    }
 }
